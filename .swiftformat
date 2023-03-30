@@ -1,0 +1,16 @@
+--exclude etc, \
+	Scripts
+--disable redundantReturn, \
+	wrapMultilineStatementBraces, \
+	wrapSwitchCases, \
+	preferKeyPath, \
+	redundantSelf, \
+	redundantRawValues
+--stripunusedargs closure-only
+--indent tab
+--trimwhitespace nonblank-lines
+--maxwidth 150
+--wrapparameters before-first
+--wraparguments before-first
+--wrapcollections before-first
+--ranges no-space
