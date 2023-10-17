@@ -6,6 +6,9 @@ import PackageDescription
 let package = Package(
 	name: "CarthageWrapper",
 	platforms: [.macOS(.v12)],
+    products: [
+        .executable(name: "CarthageWrapper", targets: ["CarthageWrapper"]),
+    ],
 	dependencies: [
 		.package(url: "https://github.com/apple/swift-argument-parser", "1.1.4"..<"1.2.0"), // 1.2.0 Bugs (default value for @Flag)
 		.package(url: "https://github.com/swiftlane-code/SwiftlaneCore.git", from: "0.9.0"),
