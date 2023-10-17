@@ -8,6 +8,21 @@ CarthageWrapper also provides a way to download binary-only dependencies without
 
 > Fat binaries are sliced into xcframeworks. This way you get meaningful build errors when one of your dependencies doesn't support target architecture or platform.
 
+## Installation
+
+Using [Mint](https://github.com/yonaskolb/mint):
+```sh
+$ mint install swiftlane-code/CarthageWrapper
+```
+
+Using the Swift Package Manager:
+```sh
+$ git clone https://github.com/swiftlane-code/CarthageWrapper.git
+$ cd CarthageWrapper
+$ swift build -c release
+$ cp -f .build/release/CarthageWrapper /usr/local/bin/
+```
+
 ## Remote Storage
 
 Built binaries are stored in form of zipped xcframeworks in a **remote storage**. 
